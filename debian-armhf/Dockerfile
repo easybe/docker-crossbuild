@@ -5,5 +5,5 @@ RUN echo "deb-src http://httpredir.debian.org/debian stable main" \
     apt-get update && \
     apt-get install -y --no-install-recommends \
         build-essential crossbuild-essential-armhf bison flex fakeroot bc kmod \
-        cpio libssl-dev tig vim cscope ccache && \
+        cpio libssl-dev less tig vim cscope ccache && \
     rm -rf /var/lib/apt/lists/*
