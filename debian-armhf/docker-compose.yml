@@ -1,6 +1,0 @@
-version: '2'
-services:
-  builder:
-    image: easybe/debian-armhf-build
-    build: .
-    entrypoint: sh -c 'echo I am not meant to be run!; exit 1'
