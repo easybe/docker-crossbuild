@@ -1,4 +1,4 @@
-FROM ubuntu:eoan
+FROM ubuntu:groovy
 
 ARG DEBIAN_FRONTEND=noninteractive
 
