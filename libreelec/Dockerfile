@@ -25,7 +25,7 @@ RUN apt-get update && apt-get install -y \
     golang-go \
     git openssh-client \
     pkg-config libyaml-dev libssl-dev bsdmainutils device-tree-compiler \
-    less tig vim cscope \
+    less tig vim cscope python3-pip \
     --no-install-recommends \
  && rm -rf /var/lib/apt/lists/*
 
