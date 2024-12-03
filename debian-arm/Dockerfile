@@ -10,12 +10,13 @@ RUN apt-get update && \
         ca-certificates \
         ccache \
         cpio \
+        crossbuild-essential-arm64 \
         crossbuild-essential-armhf \
         cscope \
         fakeroot \
         flex \
-        gdb-arm-none-eabi \
         gdb-doc \
+        gdb-multiarch \
         kmod \
         less \
         libssl-dev \
