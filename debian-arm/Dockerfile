@@ -1,4 +1,4 @@
-FROM debian:buster
+FROM debian:bookworm
 
 ADD sources.list /etc/apt/sources.list
 
