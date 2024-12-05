@@ -21,6 +21,7 @@ RUN apt-get update && \
         less \
         libssl-dev \
         man \
+        python3 \
         ssh \
         tig \
         vim \
