@@ -1,6 +1,6 @@
 FROM debian:bookworm
 
-ADD sources.list /etc/apt/sources.list
+COPY sources.list /etc/apt/sources.list
 
 RUN dpkg --add-architecture arm64 && \
     dpkg --add-architecture armhf && \
@@ -20,6 +20,7 @@ RUN dpkg --add-architecture arm64 && \
         flex \
         gdb-doc \
         gdb-multiarch \
+        gosu \
         kmod \
         less \
         libelf-dev \
@@ -34,3 +35,6 @@ RUN dpkg --add-architecture arm64 && \
         vim \
         && \
     rm -rf /var/lib/apt/lists/*
+
+COPY docker-entrypoint.sh /docker-entrypoint.sh
+ENTRYPOINT ["/docker-entrypoint.sh"]
