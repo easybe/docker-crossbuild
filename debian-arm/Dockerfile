@@ -29,6 +29,7 @@ RUN dpkg --add-architecture arm64 && \
         libssl-dev:armhf \
         man \
         python3 \
+        python3.11-venv \
         rsync \
         ssh \
         tig \
