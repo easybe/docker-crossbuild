@@ -39,4 +39,5 @@ RUN dpkg --add-architecture arm64 && \
     sed -Ei 's/^(UID_MIN[[:space:]]+)[[:digit:]]+$/\1501/' /etc/login.defs
 
 COPY docker-entrypoint.sh /docker-entrypoint.sh
+CMD ["bash"]
 ENTRYPOINT ["/docker-entrypoint.sh"]
