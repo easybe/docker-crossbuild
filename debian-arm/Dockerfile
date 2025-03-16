@@ -35,7 +35,8 @@ RUN dpkg --add-architecture arm64 && \
         tig \
         vim \
         && \
-    rm -rf /var/lib/apt/lists/*
+    rm -rf /var/lib/apt/lists/* && \
+    sed -Ei 's/^(UID_MIN[[:space:]]+)[[:digit:]]+$/\1501/' /etc/login.defs
 
 COPY docker-entrypoint.sh /docker-entrypoint.sh
 ENTRYPOINT ["/docker-entrypoint.sh"]
