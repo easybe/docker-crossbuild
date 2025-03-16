@@ -24,14 +24,17 @@ RUN dpkg --add-architecture arm64 && \
         kmod \
         less \
         libelf-dev \
+        libgnutls28-dev \
         libssl-dev \
         libssl-dev:arm64 \
         libssl-dev:armhf \
         man \
         python3 \
-        python3.11-venv \
+        python3-dev \
+        python3-venv \
         rsync \
         ssh \
+        swig \
         tig \
         vim \
         && \
