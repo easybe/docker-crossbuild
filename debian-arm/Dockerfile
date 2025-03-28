@@ -18,6 +18,7 @@ RUN dpkg --add-architecture arm64 && \
         debhelper-compat \
         fakeroot \
         flex \
+        gawk \
         gdb-doc \
         gdb-multiarch \
         gosu \
@@ -25,6 +26,7 @@ RUN dpkg --add-architecture arm64 && \
         less \
         libelf-dev \
         libgnutls28-dev \
+        libncurses-dev \
         libssl-dev \
         libssl-dev:arm64 \
         libssl-dev:armhf \
@@ -36,7 +38,9 @@ RUN dpkg --add-architecture arm64 && \
         ssh \
         swig \
         tig \
+        unzip \
         vim \
+        wget \
         && \
     rm -rf /var/lib/apt/lists/* && \
     sed -Ei 's/^(UID_MIN[[:space:]]+)[[:digit:]]+$/\1501/' /etc/login.defs
