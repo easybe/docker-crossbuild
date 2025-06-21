@@ -36,6 +36,7 @@ RUN dpkg --add-architecture arm64 && \
         python3-venv \
         rsync \
         ssh \
+        sudo \
         swig \
         tig \
         unzip \
