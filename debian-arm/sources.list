@@ -1,2 +1,4 @@
 deb http://httpredir.debian.org/debian trixie main non-free
+deb http://httpredir.debian.org/debian trixie-backports main
 deb-src http://httpredir.debian.org/debian trixie main
+deb-src http://httpredir.debian.org/debian trixie-backports main
