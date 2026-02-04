@@ -1,2 +1,2 @@
-deb http://httpredir.debian.org/debian stable main non-free
-deb-src http://httpredir.debian.org/debian stable main
+deb http://httpredir.debian.org/debian trixie main non-free
+deb-src http://httpredir.debian.org/debian trixie main
